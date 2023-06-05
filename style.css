@@ -1,0 +1,32 @@
+/* ====font===== */
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300;1,400;1,500&family=Kanit:wght@400;500&family=Mulish:ital,wght@1,300&display=swap');
+/* ======end font======= */
+:root {
+    --clr-dark: #14213d;
+    --clr-gray: #e5e5e5;
+    --clr-white: #fff;
+    --clr-black: #000;
+    --clr-yellow: #fca311;
+    --ff-primary: "Kanit", sans-serif;
+    --ff-secondary: "Mulish", "cursive";
+    --transition: all 0.3s linear;
+    --readius: 1rem;
+}
+body{
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-dark);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
