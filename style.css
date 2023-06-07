@@ -147,7 +147,7 @@ li:hover {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.247);
 }
 .line {
-    border: 3px solid var(--clr-gray);
+    border: 5px solid var(--clr-gray);
     background: var(--clr-gray);
     width: 100%;
 }
@@ -182,11 +182,29 @@ li:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
-
-
-
-
+.about-card-one{
+    text-align: center;
+}
+.about-card-one > h1 {
+    font-size: 3rem;
+}
+.about-card-one > p {
+    text-align: justify;
+}
+.about-card-two {
+    padding: 1rem;
+}
+@media screen and (min-width: 350px) {
+    /* .about-section { */
+        /* flex-wrap: wrap; */
+    /* } */
+    .about-container {
+        flex-direction: row;
+        width: 100%;
+    }
+}
 
 
 
