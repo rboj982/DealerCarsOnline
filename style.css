@@ -238,8 +238,34 @@ li:hover {
         flex-basis: 100%;
     }
 }
-
-
-.banner{
+/* ======= end of gallery section ======== */
+/* ======= banner section ======== */
+.banner {
     background: url(./images/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
 }
+.banner h1 {
+    font-size: 36px;
+    color: var(--clr-dark);
+    padding-bottom: 2rem;
+}
+.banner p {
+    font-size: 18px;
+}
+@media (max-width: 768px) {
+    .banner {
+    padding: 30px;
+    }
+    .banner h1 {
+    font-size: 24px;
+    }
+    .banner p {
+        font-size: 16px;
+    }
+}
+/* ======= end of banner section ======== */
+/* ======= car offer section ======== */
