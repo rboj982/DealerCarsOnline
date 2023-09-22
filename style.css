@@ -268,4 +268,33 @@ li:hover {
     }
 }
 /* ======= end of banner section ======== */
-/* ======= car offer section ======== */
+/* ======= cars offer section ======== */
+.cars-offer-one img {
+    display: none;
+    /* Inicijalno sakrijte sve slike */
+    max-width: 100%;
+    /* Maksimalna širina za slike */
+}
+
+.cars-offer-one img.active {
+    display: block;
+    /* Prikaz aktivne slike */
+}
+
+/* Dodatni stilovi za navigaciju */
+
+.slider-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev-slide,
+.next-slide {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
