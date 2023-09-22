@@ -269,24 +269,47 @@ li:hover {
 }
 /* ======= end of banner section ======== */
 /* ======= cars offer section ======== */
-.cars-offer-one img {
-    display: none;
-    /* Inicijalno sakrijte sve slike */
-    max-width: 100%;
+/* .cars-offer-one img { */
+    /* max-width: 100%; */
     /* Maksimalna širina za slike */
+    /* cursor: pointer; */
+    /* Pokazivač ruke za klikabilne slike */
+/* } */
+.cars-offer-one img:not(.active) {
+    display: none;
 }
 
-.cars-offer-one img.active {
+/* Dodatni stilovi za popup prozor */
+
+.modal {
+    display: none;
+    /* Inicijalno sakrijte modal */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Transparentna pozadina */
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-content {
     display: block;
-    /* Prikaz aktivne slike */
-}
-
-/* Dodatni stilovi za navigaciju */
-
-.slider-controls {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
     text-align: center;
-    margin-top: 10px;
+    position: relative;
 }
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Dodatni stilovi za navigaciju u modalu */
 
 .prev-slide,
 .next-slide {
@@ -297,4 +320,15 @@ li:hover {
     margin: 0 10px;
     cursor: pointer;
     font-size: 16px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev-slide {
+    left: 0;
+}
+
+.next-slide {
+    right: 0;
 }
