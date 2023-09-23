@@ -250,7 +250,7 @@ li:hover {
 }
 .banner h1 {
     font-size: 36px;
-    color: var(--clr-dark);
+    color: var(--clr-yellow);
     padding-bottom: 2rem;
 }
 .banner p {
@@ -312,11 +312,14 @@ li:hover {
 .navigation {
     margin-top: 20px;
 }
+.dek-tex {
+    color:var(--clr-dark)!important;
+    text-decoration: underline;
+}
 .offer-container h2 {
     font-weight: bold;
-
+    color: var(--clr-yellow);
     text-align: center;
-
 }
 .caroffer {
     margin: 1rem;
