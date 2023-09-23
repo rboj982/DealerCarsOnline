@@ -269,66 +269,42 @@ li:hover {
 }
 /* ======= end of banner section ======== */
 /* ======= cars offer section ======== */
-/* .cars-offer-one img { */
-    /* max-width: 100%; */
-    /* Maksimalna širina za slike */
-    /* cursor: pointer; */
-    /* Pokazivač ruke za klikabilne slike */
-/* } */
-.cars-offer-one img:not(.active) {
-    display: none;
+/* Stil za sekciju oglasa */
+.caroffer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Raspored oglasa po tri u redu */
+    gap: 20px;
+    /* Razmak između oglasa */
 }
 
-/* Dodatni stilovi za popup prozor */
-
-.modal {
-    display: none;
-    /* Inicijalno sakrijte modal */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Transparentna pozadina */
-    z-index: 1;
-    overflow: auto;
-}
-
-.modal-content {
-    display: block;
-    max-width: 80%;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
+/* Stil za svaki oglas */
+.offer {
+    flex: 0 0 calc(33.333% - 20px);
+    /* Raspored oglasa po tri u redu, sa razmakom od 20px */
     position: relative;
-}
-
-.modal-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Dodatni stilovi za navigaciju u modalu */
-
-.prev-slide,
-.next-slide {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
     cursor: pointer;
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    overflow: hidden;
+    /* Sakrij sve slike osim prve */
 }
 
-.prev-slide {
-    left: 0;
+.offer img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    /* Sakrij sve slike osim prve */
 }
 
-.next-slide {
-    right: 0;
+.offer img.active {
+    opacity: 1;
+    /* Prikazi samo prvu sliku */
+}
+
+/* Stil za ostale informacije oglasa */
+.offer h2 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
