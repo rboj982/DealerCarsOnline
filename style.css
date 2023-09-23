@@ -269,27 +269,20 @@ li:hover {
 }
 /* ======= end of banner section ======== */
 /* ======= cars offer section ======== */
-/* Stil za galerije slika */
 .offer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-/* Stil za slike u galeriji */
 .offer-container img {
     max-width: 100%;
     height: auto;
     cursor: pointer;
-        /* Dodajte ovu liniju kako biste omogućili da se slike mogu kliknuti */
 }
-
-/* Stil za skrivene slike u galeriji */
 .offer-container img:not(:first-child) {
     display: none;
 }
-
-/* Stil za popup prozor */
 .popup {
     display: none;
     position: fixed;
@@ -300,7 +293,6 @@ li:hover {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
-
 .popup-content {
     position: absolute;
     top: 50%;
@@ -310,7 +302,6 @@ li:hover {
     padding: 30px;
     text-align: center;
 }
-
 .close-btn {
     position: absolute;
     top: 10px;
@@ -318,39 +309,25 @@ li:hover {
     font-size: 24px;
     cursor: pointer;
 }
-
 .navigation {
     margin-top: 20px;
 }
 .offer-container h2 {
     font-weight: bold;
-    /* Podešavanje da bude boldovan */
+
     text-align: center;
-    /* Centriranje teksta */
+
 }
-/* Dodavanje boje pozadine iznad i ispod sekcije */
-/* Dodavanje belih margina oko sekcije */
 .caroffer {
     margin: 1rem;
-    /* 1rem margina sa svih strana */
 }
-
-/* Dodatni stil za dugmad u popup prozoru ako je potrebno */
-
-/* Media upit za responzivan dizajn */
 @media (max-width: 768px) {
     .offer-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    /* Dodatno prilagodite stil za tablete ako je potrebno */
 }
-
-/* Media upit za male ekrane, npr. telefone */
 @media (max-width: 480px) {
     .offer-container {
         grid-template-columns: 1fr;
     }
-
-    /* Dodatno prilagodite stil za male ekrane ako je potrebno */
 }
