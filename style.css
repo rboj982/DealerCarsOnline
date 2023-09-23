@@ -280,6 +280,8 @@ li:hover {
 .offer-container img {
     max-width: 100%;
     height: auto;
+    cursor: pointer;
+        /* Dodajte ovu liniju kako biste omogućili da se slike mogu kliknuti */
 }
 
 /* Stil za skrivene slike u galeriji */
@@ -325,6 +327,12 @@ li:hover {
     /* Podešavanje da bude boldovan */
     text-align: center;
     /* Centriranje teksta */
+}
+/* Dodavanje boje pozadine iznad i ispod sekcije */
+/* Dodavanje belih margina oko sekcije */
+.caroffer {
+    margin: 1rem;
+    /* 1rem margina sa svih strana */
 }
 
 /* Dodatni stil za dugmad u popup prozoru ako je potrebno */
