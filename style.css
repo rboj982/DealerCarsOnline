@@ -269,42 +269,80 @@ li:hover {
 }
 /* ======= end of banner section ======== */
 /* ======= cars offer section ======== */
-/* Stil za sekciju oglasa */
-.caroffer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* Raspored oglasa po tri u redu */
+/* Stil za galerije slika */
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    /* Razmak između oglasa */
 }
 
-/* Stil za svaki oglas */
-.offer {
-    flex: 0 0 calc(33.333% - 20px);
-    /* Raspored oglasa po tri u redu, sa razmakom od 20px */
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    /* Sakrij sve slike osim prve */
-}
-
-.offer img {
-    width: 100%;
+/* Stil za slike u galeriji */
+.offer-container img {
+    max-width: 100%;
     height: auto;
-    display: block;
-    opacity: 0;
-    /* Sakrij sve slike osim prve */
 }
 
-.offer img.active {
-    opacity: 1;
-    /* Prikazi samo prvu sliku */
+/* Stil za skrivene slike u galeriji */
+.offer-container img:not(:first-child) {
+    display: none;
 }
 
-/* Stil za ostale informacije oglasa */
-.offer h2 {
-    margin-top: 10px;
-    font-size: 18px;
+/* Stil za popup prozor */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+.offer-container h2 {
     font-weight: bold;
+    /* Podešavanje da bude boldovan */
+    text-align: center;
+    /* Centriranje teksta */
+}
+
+/* Dodatni stil za dugmad u popup prozoru ako je potrebno */
+
+/* Media upit za responzivan dizajn */
+@media (max-width: 768px) {
+    .offer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Dodatno prilagodite stil za tablete ako je potrebno */
+}
+
+/* Media upit za male ekrane, npr. telefone */
+@media (max-width: 480px) {
+    .offer-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Dodatno prilagodite stil za male ekrane ako je potrebno */
 }
