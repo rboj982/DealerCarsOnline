@@ -73,8 +73,10 @@ li > a {
     color: var(--clr-white);
 }
 li:hover {
-    transition: all linear 0.4s;
-    background: rgba(255, 255, 255, 0.178);
+    transition: all linear 0.2s;
+    background: var(--clr-yellow);
+    opacity: 0.5;
+    border-radius: 1rem;
 }
 @media screen and (min-width: 350px) {
     .nav-list-cont {
@@ -146,6 +148,11 @@ li:hover {
     font-weight: 300;
     margin-top: -0.2rem;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.247);
+}
+.hero > h2 {
+    color: var(--clr-yellow);
+    font-size: 2rem;
+    line-height: 3rem;
 }
 .line {
     border: 5px solid var(--clr-gray);
@@ -274,7 +281,6 @@ li:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
 .offer-container img {
     max-width: 100%;
     height: auto;
@@ -303,5 +309,51 @@ li:hover {
 @media (max-width: 480px) {
     .offer-container {
         grid-template-columns: 1fr;
+    }
+}
+/* ======= end of cars offer section ======== */
+/* ======= footer section ======== */
+/* Osnovni stilovi za footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--clr-dark);
+    color: var(--clr-yellow);
+    padding: 1rem 0;
+    opacity: 0.8;
+}
+.foooter-card-one,
+.foooter-card-two {
+    flex: 1;
+    max-width: 20rem;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid var(--clr-yellow);
+    background:var(--clr-yellow);
+    border-radius: 1rem;
+}
+.icon {
+    height: 2.3rem;
+    width: 2.5rem;
+    margin-top: 5rem;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 40%;
+    background: #fca311;
+}
+.icon :hover{
+    opacity: 0.8;
+    border-radius: 40% ;
+    background-color: var(--clr-yellow);
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .foooter-card-one,
+    .foooter-card-two {
+        width: 90%;
     }
 }
