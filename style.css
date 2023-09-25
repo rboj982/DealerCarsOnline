@@ -313,7 +313,6 @@ li:hover {
 }
 /* ======= end of cars offer section ======== */
 /* ======= footer section ======== */
-/* Osnovni stilovi za footer */
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -357,3 +356,4 @@ li:hover {
         width: 90%;
     }
 }
+/* ======= end of footer section ======== */
